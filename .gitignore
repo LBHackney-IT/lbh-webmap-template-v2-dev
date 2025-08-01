@@ -8,3 +8,4 @@ src/js/helpers/hackneyGeoserver.js
 .npmrc
 .pre-commit-config.yaml
 web.config
+test.js

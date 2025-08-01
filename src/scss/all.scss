@@ -1,9 +1,12 @@
 //$lbh-global-styles: true;
-@import "node_modules/leaflet/dist/leaflet";
-@import "node_modules/leaflet-easybutton/src/easy-button";
-@import "node_modules/leaflet-control-window/src/L.Control.Window";
-@import "node_modules/leaflet.markercluster/dist/MarkerCluster";
-@import "node_modules/leaflet-gesture-handling/dist/leaflet-gesture-handling";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "leaflet/dist/leaflet.css";
+@import "leaflet-easybutton/src/easy-button.css";
+@import "leaflet-control-window/src/L.Control.Window.css";
+@import "leaflet.markercluster/dist/MarkerCluster.css";
+@import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
 @import "node_modules/lbh-frontend/lbh/all";
 @import "./partials/filters";
 @import "./partials/map";
@@ -46,11 +49,11 @@
 }
 
 .leaflet-control-layers-toggle {
-  background-image: url("../images/layers.png");
+  background-image: url("../../images/layers.png");
 }
 
 .leaflet-retina .leaflet-control-layers-toggle {
-  background-image: url("../images/layers-2x.png");
+  background-image: url("../../images/layers-2x.png");
 }
 
 .leaflet-control-window .promptButtons {
