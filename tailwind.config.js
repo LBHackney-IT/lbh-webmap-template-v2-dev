@@ -4,10 +4,13 @@ module.exports = {
   content: ["./src/**/*.html",
      "./src/**/*.js",
      "./templates/**/*.html",
-     "./node_modules/govuk-frontend/dist/govuk/all.bundle.js",
     ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['GDS Transport','Helvetica', 'Arial', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };
