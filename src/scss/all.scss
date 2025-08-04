@@ -1,7 +1,4 @@
 //$lbh-global-styles: true;
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @import "leaflet/dist/leaflet.css";
 @import "leaflet-easybutton/src/easy-button.css";
 @import "leaflet-control-window/src/L.Control.Window.css";
@@ -84,3 +81,7 @@
 body{
   font-family:"GDS Transport", Arial, sans-serif;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

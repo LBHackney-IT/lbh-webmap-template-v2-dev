@@ -9,3 +9,5 @@ src/js/helpers/hackneyGeoserver.js
 .pre-commit-config.yaml
 web.config
 test.js
+.parcel-cache/
+
