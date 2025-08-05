@@ -10,16 +10,16 @@
     <!-- Add styles -->
     <link rel="stylesheet" href="../dist/lbh-webmap.min.css">
 </head>
-<body class="govuk-template__body js-enabled bg-green-400">
+<body class="govuk-template__body js-enabled font-sans">
     {% block map %}
     <a href="#exit-map-link" class="govuk-skip-link lbh-skip-link">Skip map</a>
-    <div class="map__container bg-red-500 border-4 border-dotted border-green-800">
+    <div class="map__container">
         <div class="map__wrapper">
             <div class="map" id="map"></div>
         </div>         
     </div>
     {% endblock %}
-    <script src="../lbhfrontend/all.js"></script>  
+    <!-- <script src="../node_modules/lbh-frontend/lbh/all.js"></script>  -->
     <script src="../dist/lbh-webmap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/danfojs@1.1.2/lib/bundle.min.js"></script>
 </body>
