@@ -10,4 +10,8 @@ src/js/helpers/hackneyGeoserver.js
 web.config
 test.js
 .parcel-cache/
+dist/main.js
+dist/main.js.map
+dist/all.css.map
+dist/all.css
 

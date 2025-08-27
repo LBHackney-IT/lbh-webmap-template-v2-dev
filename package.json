@@ -6,7 +6,7 @@
   "scripts": {
     "build:js": "parcel build src/js/main.js --target js",
     "build:css": "parcel build src/scss/all.scss --dist-dir dist ",
-    "postbuild": "mv dist/main.js dist/lbh-webmap.min.js && mv dist/all.css dist/lbh-webmap.min.css && node app/app.js",
+    "postbuild": "mv dist/main.js dist/lbh-webmap.min.js && mv dist/all.css dist/lbh-webmap.min.css && node tasks/cleanup.js && node app/app.js",
     "build": "npm run build:js && npm run build:css && npm run postbuild"
   },
   "repository": {
