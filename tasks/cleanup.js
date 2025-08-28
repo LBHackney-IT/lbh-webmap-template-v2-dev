@@ -8,6 +8,35 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 
+// rename build files
+const mainFiles = [
+    {
+        oldFile:"main.js",
+        newFile:"lbh-webmap.min.js"
+    },
+    {
+        oldFile:"all.css",
+        newFile:"lbh-webmap.min.css"
+    },
+]
+
+mainFiles.forEach((mainFile) => {
+    const {oldFile,newFile} = mainFile
+    console.log(oldFile,newFile)
+    const oldPath = path.join(__dirname,"..", "dist", oldFile);
+    const newPath = path.join(__dirname,"..", "dist", newFile);
+
+    fs.rename(oldPath, newPath, (err) => {
+    if (err) {
+        console.error("❌ Error renaming file:", err);
+        process.exit(1);
+    }
+    console.log(`✅ File renamed from ${oldPath} to ${newPath}`);
+    });
+
+});
+
+//delete build .map files
 const files = ["main.js.map","all.css.map"]
 files.forEach((file) => {
     try {
