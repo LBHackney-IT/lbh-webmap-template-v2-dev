@@ -37,18 +37,18 @@ mainFiles.forEach((mainFile) => {
 });
 
 //delete build .map files
-const files = ["main.js.map","all.css.map"]
-files.forEach((file) => {
-    try {
-        const targetFile = path.join(__dirname, "..", "dist", file);
-        fs.unlinkSync(targetFile);
-        console.log(`Deleted: ${targetFile}`);
-    } catch (err) {
-        if (err.code === "ENOENT") {
-            console.log("No file to delete, skipping.");
-        } else {
-            console.error("Failed to delete file:", err);
-            process.exit(1);
-        }
-    }
-});
+// const files = ["main.js.map","all.css.map"]
+// files.forEach((file) => {
+//     try {
+//         const targetFile = path.join(__dirname, "..", "dist", file);
+//         fs.unlinkSync(targetFile);
+//         console.log(`Deleted: ${targetFile}`);
+//     } catch (err) {
+//         if (err.code === "ENOENT") {
+//             console.log("No file to delete, skipping.");
+//         } else {
+//             console.error("Failed to delete file:", err);
+//             process.exit(1);
+//         }
+//     }
+// });
