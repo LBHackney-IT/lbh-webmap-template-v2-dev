@@ -9,6 +9,7 @@
 @import "leaflet-control-window/src/L.Control.Window.css";
 @import "leaflet.markercluster/dist/MarkerCluster.css";
 @import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
+@import "govuk-frontend/govuk/components/table/_table.scss";
 // @import "node_modules/lbh-frontend/lbh/all";
 @import "core/all";
 @import "helpers/all";
@@ -28,22 +29,23 @@
 @import "lbh-radios/radios";
 @import "lbh-panel/panel";
 @import "lbh-select/select";
+@import "lbh-table/table";
 //Partials - component styles
-@import "./partials/filters";
-@import "./partials/map";
+@import "./partials/address-search";
 @import "./partials/awesome-markers-with-more-colours";
-@import "./partials/marker-cluster";
-@import "./partials/divicon";
 @import "./partials/controls";
+@import "./partials/divicon";
+@import "./partials/download";
+@import "./partials/filters";
+@import "./partials/listview";
+@import "./partials/map";
+@import "./partials/marker-cluster";
 @import "./partials/metadata";
 @import "./partials/personas";
 @import "./partials/popup";
-@import "./partials/tooltip";
 @import "./partials/search";
-@import "./partials/listview";
+@import "./partials/tooltip";
 @import "./partials/tableview";
-@import "./partials/address-search";
-@import "./partials/download";
 
 
 :root {

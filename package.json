@@ -6,8 +6,10 @@
   "scripts": {
     "build:js": "parcel build src/js/main.js --target js",
     "build:css": "parcel build src/scss/all.scss --dist-dir dist ",
-    "postbuild": "node tasks/cleanup.js && node app/app.js",
-    "build": "npm run build:js && npm run build:css && npm run postbuild"
+    "postbuild:clean": "node tasks/cleanup.js",
+    "postbuild:start": "node app/app.js",
+    "build": "npm run build:js && npm run build:css && npm run postbuild:clean",
+    "build:start": "npm run build:js && npm run build:css && npm run postbuild:clean && npm run postbuild:start"
   },
   "repository": {
     "type": "git",
