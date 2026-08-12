@@ -15,6 +15,10 @@ const mainFiles = [
         newFile:"lbh-webmap.min.js"
     },
     {
+        oldFile:"main.js.map",
+        newFile:"lbh-webmap.min.js.map"
+    },
+    {
         oldFile:"all.css",
         newFile:"lbh-webmap.min.css"
     },
